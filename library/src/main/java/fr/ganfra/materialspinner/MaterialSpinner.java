@@ -520,7 +520,7 @@ public class MaterialSpinner extends AppCompatSpinner implements ValueAnimator.A
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 if (hint != null || floatingLabelText != null) {
-                    if (!floatingLabelVisible && position != 0) {
+                    if (!floatingLabelVisible) {
                         showFloatingLabel();
                     } else if (floatingLabelVisible && (position == 0 && !alwaysShowFloatingLabel)) {
                         hideFloatingLabel();
